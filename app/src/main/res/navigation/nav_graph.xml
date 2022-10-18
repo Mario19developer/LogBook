@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login">
+
+    <activity
+        android:id="@+id/login"
+        android:name="com.example.logbook.Login"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/registrar"
+        android:name="com.example.logbook.Registrar"
+        android:label="activity_registrar"
+        tools:layout="@layout/activity_registrar" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.logbook.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/bitacora"
+        android:name="com.example.logbook.Vistas_Seguridad_Patrimonial.SP_Bitacora"
+        android:label="activity_bitacora"
+        tools:layout="@layout/activity_sp_bitacora" />
+</navigation>

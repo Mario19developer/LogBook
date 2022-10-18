@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/drawable-anydpi/ic_action_edt.xml" value="0.368" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/drawable-v24/dborder_botton.xml" value="0.368" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/drawable-v24/dbutton_gradient.xml" value="0.368" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/drawable-v24/dgradientt.xml" value="0.368" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/drawable-v24/s_border_botton.xml" value="0.368" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/drawable-v24/s_border_top.xml" value="0.368" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/drawable-v24/s_button_gradient.xml" value="0.368" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/drawable/round_background.xml" value="0.368" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/drawable/s_round_background.xml" value="0.368" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/layout/activity_bitacora.xml" value="0.3287037037037037" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/layout/activity_cfmenu.xml" value="0.3536458333333333" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/layout/activity_cosecha_data2.xml" value="0.3671875" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/layout/activity_cosechafdata.xml" value="0.3671875" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/layout/activity_cosechafqr.xml" value="0.3671875" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/layout/activity_cosechaqr.xml" value="0.27685185185185185" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/layout/activity_login.xml" value="0.3287037037037037" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/layout/activity_main.xml" value="0.30027173913043476" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/layout/activity_pase_lista.xml" value="0.3671875" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/layout/activity_registrar.xml" value="0.3671875" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/layout/fcosecha.xml" value="0.3671875" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/layout/fragment_cfagregar.xml" value="0.3055555555555556" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/layout/fragment_cflista.xml" value="0.3536458333333333" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/layout/s_dropdown_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/mario.castillo/AndroidStudioProjects/LogBook/app/src/main/res/mipmap-anydpi-v26/ic_logbook_round.xml" value="0.368" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

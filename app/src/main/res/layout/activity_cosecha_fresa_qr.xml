@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b_i_gal"
+    tools:context=".Cosecha_Fresa.Cosecha_fresa_qr">
+
+    <TextView
+        android:id="@+id/txtitcf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/blog_script_custom"
+        android:text="Cosecha Fresa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvcf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtitcf"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtusucgg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/dosis_regular"
+                    android:textStyle="bold"
+                    android:text="Usuario:" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/dosis_regular"
+                        android:text="Galera:" />
+
+                    <TextView
+                        android:id="@+id/txtgaleracgg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/dosis_regular"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="Egipto" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/dosis_regular"
+                        android:text="Puesto:" />
+
+                    <TextView
+                        android:id="@+id/txtpuestogg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/dosis_regular"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="Egipto" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/dosis_regular"
+                        android:text="Fecha \nregistro" />
+
+                    <TextView
+                        android:id="@+id/txtfechareg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/dosis_regular"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:text="01/07/2022 02:13 a. m." />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/dosis_regular"
+                        android:text="Fecha \ncosecha:" />
+
+                    <TextView
+                        android:id="@+id/txtfechagalcgg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/dosis_regular"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:text="01/07/2022" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/dosis_regular"
+                            android:text="Código origen:" />
+
+                        <TextView
+                            android:id="@+id/txtcodorigencgg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/dosis_regular"
+                            android:textStyle="bold"
+                            android:text="FTBALC-M" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/dosis_regular"
+                            android:text="Variedad:" />
+
+                        <TextView
+                            android:id="@+id/txtvariedadcgg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/dosis_regular"
+                            android:textStyle="bold"
+                            android:text="DAYANA" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/dosis_regular"
+                            android:text="Tipo de planta:" />
+
+                        <TextView
+                            android:id="@+id/txttipoplancgg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/dosis_regular"
+                            android:textStyle="bold"
+                            android:text="VERDE" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/dosis_regular"
+                            android:text="Cantidad de planta:" />
+
+                        <TextView
+                            android:id="@+id/txtqtycgg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/dosis_regular"
+                            android:text="1900" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/srv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvcf"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ti1cgg"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:hint="QR - Empleado">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edworkdaycgg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/dosis_regular"
+                        android:textAlignment="center"
+                        android:inputType="number"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnscannumworcgg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:drawableEnd="@mipmap/ic_launcher_scanqr"
+                    android:text="QR Empleado"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:cornerRadius="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ti2cgg"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:hint="QR - Caja">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edcajacgg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/dosis_regular"
+                        android:textAlignment="center" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnscaqrcajacgg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:drawableEnd="@mipmap/ic_launcher_scanqr"
+                    app:cornerRadius="20dp"
+                    android:text="QR Caja" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp">
+
+                <Button
+                    android:id="@+id/btnsalirmpcgg"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:cornerRadius="20dp"
+                    android:drawableLeft="@mipmap/ic_launcher_return"
+                    android:text="Salir al Menu" />
+
+                <Button
+                    android:id="@+id/btnguardadgalcgg"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/save"
+                    android:textColor="@color/white"
+                    app:cornerRadius="20dp"
+                    android:drawableEnd="@mipmap/ic_launcher_save"
+                    android:text="Guardar" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

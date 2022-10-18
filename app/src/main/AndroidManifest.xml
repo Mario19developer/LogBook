@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".Persistencia"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_logbook"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_logbook"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LogBook">
+        <activity
+            android:name=".Menu_Nominas_TPF_Lista"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".PaseLista"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cosecha_Fresa.Cosecha_fresa_qr"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cosecha_Fresa.Cosecha_fresa_data"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CFMenu"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Vistas_Seguridad_Patrimonial.SP_Bitacora"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Registrar"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Menu_Nominas_Pase_Lista"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Menu_Nominas_TP_Lista"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

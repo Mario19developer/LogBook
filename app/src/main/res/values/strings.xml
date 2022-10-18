@@ -1,0 +1,76 @@
+<resources>
+
+    <string name="app_name">LogBook</string>
+
+    <string name="prompt_email">Correo Electrónico</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="create_new">Click para registrar</string>
+    <string name="not_register">Ya estoy registrado</string>
+    <string name="name">Nombre Completo</string>
+    <string name="phone_number">Numero de Telefono</string>
+    <string name="register">Registrar</string>
+    <string name="name_error">Porfavor Ingresa tu numbre</string>
+    <string name="phone_error">Porfavor Ingresa tu numero de Telefono</string>
+    <string name="email_error">Porfavor Ingresa tu correo</string>
+    <string name="error_invalid_email">Este correo no es valido</string>
+    <string name="password_error">Porfavor Ingresa tu contraseña</string>
+    <string name="error_invalid_password">La contraseña debe tener mas de 6 carcteres</string>
+
+    <string name="vacio">por favor seleccióne</string>
+    <string name="errorelotelog">por favor escane el qr</string>
+    <string name="errorclotelog">El numero de workday debe contener mas de 5 digitos</string>
+
+    <string name="erroreworkday">por favor escane el qr</string>
+    <string name="errorcworkday">El numero de workday debe contener mas de 5 digitos</string>
+
+    <string name="errorecaja">por favor escane el qr</string>
+    <string name="errorccaja">El numero de workday debe contener mas de 5 digitos</string>
+
+    <string name="error_invalid_emin">El empleado no puede ser menor a 8 carcteres</string>
+    <string name="error_invalid_emax">El empleado no puede ser mayor a 8 carcteres</string>
+
+    <string name="error_invalid_cmin">El # de la caja no puede ser menor a 8 carcteres</string>
+    <string name="error_invalid_cmax">El # de la caja puede ser mayor a 8 carcteres</string>
+    <string name="error_invalid_werror">El numero empleado es erroneo</string>
+    <string name="error_invalid_cerror">El numero de caja es erroneo</string>
+
+
+    <!--zona de plantación-->
+    <string-array name="zon">
+        <item>Huamantla</item>
+        <item>Libres</item>
+        <item>El Seco</item>
+        <item>Tangancicuaro</item>
+        <item>CD. Guzman</item>
+    </string-array>
+
+    <!--zona de plantación-->
+    <string-array name="Galera">
+        <item>Egipto</item>
+        <item>El Porvenir</item>
+        <item>La Concepción</item>
+    </string-array>
+
+    <!--zona de plantación-->
+    <string-array name="pues">
+        <item>Apuntador (a)</item>
+        <item>Muestreador</item>
+        <item>Supervisor</item>
+        <item>Administrador</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_cosecha_data">CosechaData</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="bienvenido_a_logbook">Bienvenido a LOGBOOK</string>
+
+
+</resources>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/label"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:background="@color/label">
+
+            <TextView
+                android:id="@+id/txidcf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="-RFDassdkvbaA"
+                android:textAlignment="center"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/txfcharegcf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:text="23/07/2022 01:57 am"
+                android:textAlignment="center"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/label">
+
+        <TextView
+            android:id="@+id/txuscf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:text="mario.castillo@driscolls.com"/>
+
+        <!-- fecha plantacion-->
+        <TextView
+            android:id="@+id/txfccf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:text="02/05/2022"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!-- Rancho -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="11sp"
+            android:text="Galera" />
+
+        <!-- variedad -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="11sp"
+            android:text="Variedad" />
+
+        <!-- Clon-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="11sp"
+            android:text="QTY planta por caja" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!-- Rancho -->
+        <TextView
+            android:id="@+id/txgalcf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Huamantla"
+            android:textAlignment="center"
+            android:textSize="11sp"
+            android:textStyle="bold"/>
+
+        <!-- variedad -->
+        <TextView
+            android:id="@+id/txvarcf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="YUNUEN"
+            android:textAlignment="center"
+            android:textSize="11sp"
+            android:textStyle="bold"/>
+
+        <!-- Clon-->
+        <TextView
+            android:id="@+id/txqtycf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="120000"
+            android:textAlignment="center"
+            android:textSize="11sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="11sp"
+            android:text="Codigo origen"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="11sp"
+            android:text="Tipo de planta" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="# Empleado"
+            android:textAlignment="center"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="# Caja"
+            android:textAlignment="center"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!-- Sector-->
+        <TextView
+            android:id="@+id/txcodorcf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:text="CTDIEG22"/>
+
+        <!-- Fila-->
+        <TextView
+            android:id="@+id/txtipoplancf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:text="VERDE"/>
+
+        <!-- Tabla-->
+        <TextView
+            android:id="@+id/txnumemplcf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:text="Norte"/>
+
+        <!-- Tabla-->
+        <TextView
+            android:id="@+id/txcajacf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="2078"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/purple_500" />
+
+</LinearLayout>

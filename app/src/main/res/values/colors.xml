@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#9b0000</color> <!-- colorPrimary n -->
+    <color name="purple_500">#d50000</color> <!-- colorPrimary -->
+    <color name="purple_700">#ff5131</color> <!-- colorPrimaryVariant -->
+    <color name="teal_200">#03A9F4</color> <!-- colorSecondary editex -->
+    <color name="teal_700">#ff5131</color> <!-- colorSecondaryVariant -->
+    <color name="black">#FF000000</color> <!-- -->
+    <color name="white">#FFFFFFFF</color> <!-- colorOnPrimary -->
+
+    <color name="colorPrimary">#4fc3f7</color>
+    <color name="colorPrimaryDark">#8bf6ff</color>
+    <color name="colorAccent">#0093c4</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="zircon">#e0e6e4</color>
+
+    <color name="label">#F4C0C0</color>
+    <color name="fond">#fff6f6</color>
+    <color name="fondoc">#66FFFFFF</color>
+
+    
+    <color name="save">#2A882E</color>
+
+    <color name="vie">#c55d80</color>
+
+</resources>
