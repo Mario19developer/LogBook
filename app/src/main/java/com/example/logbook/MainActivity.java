@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         txtfechapsmp.setText(fechaComString);
         txtsempsmp.setText(fechacom);
 
-        // se inicia el layout CFMenu
+        // se inicia el layout Cosecha fresa
         ibreggalmp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

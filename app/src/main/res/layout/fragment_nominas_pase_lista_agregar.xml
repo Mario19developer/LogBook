@@ -294,6 +294,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
                     android:textStyle="bold"
+                    android:inputType="number"
                     android:textColor="@color/black"
                     android:fontFamily="@font/dosis_regular"
                     android:textAlignment="center" />

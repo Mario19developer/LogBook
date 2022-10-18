@@ -19,6 +19,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.logbook.Cosecha_Fresa.Cosecha_fresa_qr;
 import com.example.logbook.NominasModelo.Nominas;
 import com.example.logbook.R;
 import com.google.android.material.textfield.TextInputLayout;
@@ -147,61 +148,8 @@ public class Nominas_pase_lista_agregar extends Fragment{
             @Override
             public void onClick(View v) {
 
-                Nominas nominas = new Nominas();
-                FirebaseDatabase database = FirebaseDatabase.getInstance();
-                DatabaseReference reference = database.getReference("Nominas_2023").child("Pase_Lista");
+                validacionesplp();
 
-                String catbkpa = "Pase de lista";
-                String usuplp = txtusuplp.getText().toString();
-                String fechreplp = txtfechregplp.getText().toString();
-                String ranchoplp = txtranchoplp.getText().toString();
-                String ingresoplp = rbingresoplp.getText().toString();
-                String salidaplp = rbsalidaplp.getText().toString();
-                String zonaplp = auzonaplp.getText().toString();
-                String ranplp = auranplp.getText().toString();
-                String qrempleadoplp = edqrempleadoplp.getText().toString();
-                String coordenadas = "";
-
-                //primera validacion
-                if(edqrempleadoplp.getText().toString().isEmpty()){
-                    validacionesplp();
-                    Toast.makeText(getContext(),"Seleccióna Ingreso o Salida", Toast.LENGTH_SHORT).show();
-                }
-
-                else {
-                    //si se marca ingreso
-                    if (rbingresoplp.isChecked()){
-                        nominas.setB_Categoria(catbkpa);
-                        nominas.setC_Usuario(usuplp);
-                        nominas.setD_Fecha_Registro(fechreplp);
-                        nominas.setE_Zona_Dispositivo(ranchoplp);
-                        nominas.setF_Tipo_Lista(ingresoplp);
-                        nominas.setG_Zona_Registro(zonaplp);
-                        nominas.setH_Rancho_Registro(ranplp);
-                        nominas.setI_QR_Empleado(qrempleadoplp);
-                        nominas.setJ_Latitud(coordenadas);
-                        nominas.setK_Longitud(coordenadas);
-                        reference.push().setValue(nominas);
-                        Toast.makeText(getContext(),"Bienvenido... ", Toast.LENGTH_SHORT).show();
-                        Toast.makeText(getContext(),"Datos Guardados", Toast.LENGTH_SHORT).show();
-
-                    }
-                    else if(rbsalidaplp.isChecked()){
-                        nominas.setB_Categoria(catbkpa);
-                        nominas.setC_Usuario(usuplp);
-                        nominas.setD_Fecha_Registro(fechreplp);
-                        nominas.setE_Zona_Dispositivo(ranchoplp);
-                        nominas.setF_Tipo_Lista(salidaplp);
-                        nominas.setG_Zona_Registro(zonaplp);
-                        nominas.setH_Rancho_Registro(ranplp);
-                        nominas.setI_QR_Empleado(qrempleadoplp);
-                        nominas.setJ_Latitud(coordenadas);
-                        nominas.setK_Longitud(coordenadas);
-                        reference.push().setValue(nominas);
-                        Toast.makeText(getContext(),"Hasta Luego...", Toast.LENGTH_SHORT).show();
-                        Toast.makeText(getContext(),"Datos Guardados", Toast.LENGTH_SHORT).show();
-                    }
-                }
             }
         });
 
@@ -247,30 +195,92 @@ public class Nominas_pase_lista_agregar extends Fragment{
         if (edqrempleadoplp.getText().toString().isEmpty()){
             Toast.makeText(getContext(),"Por favor escanea un empleado", Toast.LENGTH_SHORT).show();
             qrpl = false;
-        }else if (edqrempleadoplp.getText().length() < 4) {
+        }else if (edqrempleadoplp.getText().toString().trim().length() < 4) {
             Toast.makeText(getContext(),"El QR no puede ser menor a 4", Toast.LENGTH_SHORT).show();
             qrpl = false;
-        } else if (edqrempleadoplp.getText().length() > 7) {
+        }else if (edqrempleadoplp.getText().toString().trim().length() > 7) {
             Toast.makeText(getContext(),"El QR no puede ser mayor a 7", Toast.LENGTH_SHORT).show();
             qrpl = false;
-        } else {
+        }else {
             qrpl = true;
-            Toast.makeText(getContext(),"Escaneo correcto", Toast.LENGTH_SHORT).show();
         }
 
-        if (zonapl && ranchopl && qrpl){
+        if (qrpl){
+            String QR = edqrempleadoplp.getText().toString().trim();
+            String VQR = QR.substring(0,1);
 
-            String qrv = edqrempleadoplp.getText().toString().trim();
-            String qrvv = qrv.substring(0,1);
-
-            if (qrvv.equals("A") || qrvv.equals("B") || qrvv.equals("C") || qrvv.equals("D") || qrvv.equals("E") || qrvv.equals("F")
-                    || qrvv.equals("G") || qrvv.equals("H") || qrvv.equals("I") || qrvv.equals("J") || qrvv.equals("K") || qrvv.equals("L")
-                    || qrvv.equals("M") || qrvv.equals("N") || qrvv.equals("O") || qrvv.equals("P") || qrvv.equals("Q") || qrvv.equals("R")
-                    || qrvv.equals("S") || qrvv.equals("T") || qrvv.equals("U") || qrvv.equals("V") || qrvv.equals("W") || qrvv.equals("X")
-                    || qrvv.equals("Y") || qrvv.equals("Z")){
+            if (VQR.equals("A") || VQR.equals("B") || VQR.equals("C") || VQR.equals("D") || VQR.equals("E") ||
+                    VQR.equals("F") || VQR.equals("G") || VQR.equals("H") || VQR.equals("I") || VQR.equals("J") || VQR.equals("K") ||
+                    VQR.equals("M") || VQR.equals("N") || VQR.equals("O") || VQR.equals("P") || VQR.equals("Q") || VQR.equals("R") ||
+                    VQR.equals("S") || VQR.equals("T") || VQR.equals("U") || VQR.equals("V") || VQR.equals("W") || VQR.equals("X") ||
+                    VQR.equals("Y") || VQR.equals("Z") || VQR.equals("a") || VQR.equals("b") || VQR.equals("c") || VQR.equals("d") ||
+                    VQR.equals("e") || VQR.equals("f") || VQR.equals("g") || VQR.equals("h") || VQR.equals("i") || VQR.equals("j") ||
+                    VQR.equals("k") || VQR.equals("l") || VQR.equals("m") || VQR.equals("n") || VQR.equals("o") || VQR.equals("p") ||
+                    VQR.equals("q") || VQR.equals("r") || VQR.equals("s") || VQR.equals("t") || VQR.equals("u") || VQR.equals("w") ||
+                    VQR.equals("x") || VQR.equals("y") || VQR.equals("z")){
                 Toast.makeText(getContext(),"El QR no puede tener letras", Toast.LENGTH_SHORT).show();
-                qrpl = false;
+            }else if (VQR.equals("4") || VQR.equals("5") || VQR.equals("6") || VQR.equals("7") || VQR.equals("8")){
+                Guardar_Registros();
             }
+        }
+    }
+
+    private void Guardar_Registros() {
+
+        //Variable Fecha (d)
+        Date d = new Date();
+
+        //Sacamos la fecha y la hora
+        SimpleDateFormat fechah = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        String fechahora = fechah.format(d);
+
+        //Se visualiza la fecha y hora
+        txtfechregplp.setText(fechahora);
+
+        Nominas nominas = new Nominas();
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference reference = database.getReference("Nominas_2023").child("Pase_Lista");
+
+        String catbkpa = "Pase de lista";
+        String usuplp = txtusuplp.getText().toString();
+        String fechreplp = txtfechregplp.getText().toString();
+        String ranchoplp = txtranchoplp.getText().toString();
+        String ingresoplp = rbingresoplp.getText().toString();
+        String salidaplp = rbsalidaplp.getText().toString();
+        String zonaplp = auzonaplp.getText().toString();
+        String ranplp = auranplp.getText().toString();
+        String qrempleadoplp = edqrempleadoplp.getText().toString();
+        String coordenadas = "";
+
+        if (rbingresoplp.isChecked()){
+            nominas.setB_Categoria(catbkpa);
+            nominas.setC_Usuario(usuplp);
+            nominas.setD_Fecha_Registro(fechreplp);
+            nominas.setE_Zona_Dispositivo(ranchoplp);
+            nominas.setF_Tipo_Lista(ingresoplp);
+            nominas.setG_Zona_Registro(zonaplp);
+            nominas.setH_Rancho_Registro(ranplp);
+            nominas.setI_QR_Empleado(qrempleadoplp);
+            nominas.setJ_Latitud(coordenadas);
+            nominas.setK_Longitud(coordenadas);
+            reference.push().setValue(nominas);
+            Toast.makeText(getContext(),"Bienvenido... ", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(),"Datos Guardados", Toast.LENGTH_SHORT).show();
+        }
+        else if(rbsalidaplp.isChecked()){
+            nominas.setB_Categoria(catbkpa);
+            nominas.setC_Usuario(usuplp);
+            nominas.setD_Fecha_Registro(fechreplp);
+            nominas.setE_Zona_Dispositivo(ranchoplp);
+            nominas.setF_Tipo_Lista(salidaplp);
+            nominas.setG_Zona_Registro(zonaplp);
+            nominas.setH_Rancho_Registro(ranplp);
+            nominas.setI_QR_Empleado(qrempleadoplp);
+            nominas.setJ_Latitud(coordenadas);
+            nominas.setK_Longitud(coordenadas);
+            reference.push().setValue(nominas);
+            Toast.makeText(getContext(),"Hasta Luego...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(),"Datos Guardados", Toast.LENGTH_SHORT).show();
         }
     }
 
