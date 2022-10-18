@@ -130,7 +130,6 @@ public class Cosecha_fresa_agregar extends Fragment {
         btnsclogcf.setOnClickListener(mOnClickListener);
         btnnworkdaycf.setOnClickListener(mOnClickListener);
 
-
         btnguardargcf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

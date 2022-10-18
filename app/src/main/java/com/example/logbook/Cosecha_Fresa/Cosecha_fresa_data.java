@@ -82,7 +82,6 @@ public class Cosecha_fresa_data extends AppCompatActivity {
         //se visualiza la fecha
         edfechcoscg.setText(fechaCom);
 
-
         String [] items1 = { "", "CLPORV22", "CSCRUZ22", "CSVICT22", "CSVIST22", "CTATEN22", "CTEGIP22", "CTFRAN22"};
         //Sea gregar el array adapter y se especifica la ubicacion del Variedad
         ArrayAdapter<String> itemAdapter1 = new ArrayAdapter<>(Cosecha_fresa_data.this, R.layout.s_dropdown_item,items1);
@@ -111,12 +110,12 @@ public class Cosecha_fresa_data extends AppCompatActivity {
             public void onClick(View v) {
 
                 valicaionesdata();
+
             }
         });
 
         recivirdatosuser();
     }
-
 
     private void recivirdatosuser() {
         Bundle extras = getIntent().getExtras();

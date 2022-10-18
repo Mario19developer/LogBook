@@ -80,6 +80,8 @@ public class Cosecha_fresa_qr extends AppCompatActivity {
 
                 validacionescosecha();
 
+                //falta validacion de conexion a internet si es el internet es bueno que haga la busqueda y si no es bueno entonces que lo mitigue
+
                 /*
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
                 //si esto es verdadero se manda a la base de datos
@@ -92,7 +94,6 @@ public class Cosecha_fresa_qr extends AppCompatActivity {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-
                         for (DataSnapshot ds : snapshot.getChildren()){
                             Cosecha f = ds.getValue(Cosecha.class);
                             f.setA_Id(ds.getKey());
@@ -100,7 +101,6 @@ public class Cosecha_fresa_qr extends AppCompatActivity {
                             Log.e("info","------->"+f.getM_ID_Caja());
                             Toast.makeText(Cosecha_fresa_qr.this,f.getM_ID_Caja(),Toast.LENGTH_SHORT).show();
                         }
-
 
                         if (snapshot.exists()){
 
@@ -119,8 +119,7 @@ public class Cosecha_fresa_qr extends AppCompatActivity {
                         Log.e("info","------->");
                     }
                 });
-
-                 */
+                */
             }
         });
 
@@ -195,6 +194,7 @@ public class Cosecha_fresa_qr extends AppCompatActivity {
         }
 
         return super.onKeyDown(keyCode, event);
+
     }
 
     //regresar al menu princiapal
