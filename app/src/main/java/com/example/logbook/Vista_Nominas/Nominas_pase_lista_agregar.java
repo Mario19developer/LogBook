@@ -220,12 +220,12 @@ public class Nominas_pase_lista_agregar extends Fragment{
                     VQR.equals("x") || VQR.equals("y") || VQR.equals("z")){
                 Toast.makeText(getContext(),"El QR no puede tener letras", Toast.LENGTH_SHORT).show();
             }else if (VQR.equals("4") || VQR.equals("5") || VQR.equals("6") || VQR.equals("7") || VQR.equals("8")){
-                Guardar_Registros();
+                Guardar_Registrosplp();
             }
         }
     }
 
-    private void Guardar_Registros() {
+    private void Guardar_Registrosplp() {
 
         //Variable Fecha (d)
         Date d = new Date();
@@ -266,6 +266,7 @@ public class Nominas_pase_lista_agregar extends Fragment{
             reference.push().setValue(nominas);
             Toast.makeText(getContext(),"Bienvenido... ", Toast.LENGTH_SHORT).show();
             Toast.makeText(getContext(),"Datos Guardados", Toast.LENGTH_SHORT).show();
+            limpiarplp();
         }
         else if(rbsalidaplp.isChecked()){
             nominas.setB_Categoria(catbkpa);
@@ -281,7 +282,12 @@ public class Nominas_pase_lista_agregar extends Fragment{
             reference.push().setValue(nominas);
             Toast.makeText(getContext(),"Hasta Luego...", Toast.LENGTH_SHORT).show();
             Toast.makeText(getContext(),"Datos Guardados", Toast.LENGTH_SHORT).show();
+            limpiarplp();
         }
+    }
+
+    private void limpiarplp() {
+        edqrempleadoplp.setText("");
     }
 
     //se llama al scanner
