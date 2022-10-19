@@ -19,7 +19,6 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.logbook.Cosecha_Fresa.Cosecha_fresa_qr;
 import com.example.logbook.NominasModelo.Nominas;
 import com.example.logbook.R;
 import com.google.android.material.textfield.TextInputLayout;
