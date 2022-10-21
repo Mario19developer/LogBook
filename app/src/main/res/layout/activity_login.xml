@@ -49,7 +49,6 @@
                         android:singleLine="true" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/PassError"
                     android:layout_width="match_parent"
@@ -72,10 +71,9 @@
                 <Button
                     android:id="@+id/Llogin"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="match_parent"
                     android:layout_margin="20dp"
-                    app:cornerRadius="20dp"
-                    android:enabled="true"
+                    app:cornerRadius="10dp"
                     android:text="@string/login"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white"
